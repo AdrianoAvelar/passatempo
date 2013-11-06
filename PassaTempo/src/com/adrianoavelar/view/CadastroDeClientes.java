@@ -260,6 +260,7 @@ public class CadastroDeClientes extends JDialog {
 	// @Teste #Remover na versão final
 	@Deprecated
 	public void preencherCampos() {
+		
 		tfNome.setText("Adriano Avelar");
 		tfEndereco.setText("Estrada do Bongi, 425 B");
 		tfBairro.setText("Afogados");

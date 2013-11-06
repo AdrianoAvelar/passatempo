@@ -1,5 +1,6 @@
 package com.adrianoavelar.model;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public class FileDAO implements IDAO {
@@ -26,6 +27,20 @@ public class FileDAO implements IDAO {
 
 	@Override
 	public List<Cliente> pesquisar(Cliente cliente) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void salvar(Filme filme) throws SQLException {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public Object pesquisaComRetorno(String table, String coluna,
+			String criterio) {
 		// TODO Auto-generated method stub
 		return null;
 	}

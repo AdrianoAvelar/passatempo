@@ -51,9 +51,24 @@ public enum Generos {
 
         return names;
     }
+    
+    public static Generos getValueOf(String str){
+    	Generos[] generos = values();
+    	Generos ret = null;
+    	 for (int i = 0; i < generos.length; i++) {
+    		 if(str.equals(generos[i].toString()))
+    		{
+    			 ret= generos[i];
+    			 break;
+    		}
+    	 }
+		return ret;
+    }
 	
 	@Override  
     public String toString() {  
         return genero;  
     }
+	
+
 }

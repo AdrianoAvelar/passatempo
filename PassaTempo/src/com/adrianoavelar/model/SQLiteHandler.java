@@ -2,6 +2,7 @@ package com.adrianoavelar.model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -60,6 +61,11 @@ public class SQLiteHandler {
 	
 	public void executeUpdate(String sql) throws SQLException{
 		stmt.executeUpdate(sql);
+	
+	}
+	
+	public ResultSet executeQuery(String sql) throws SQLException{
+		return stmt.executeQuery(sql);
 	}
 	
 	public static void main(String args[]) throws SQLException {

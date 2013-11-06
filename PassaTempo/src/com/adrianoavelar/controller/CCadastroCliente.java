@@ -1,12 +1,16 @@
 package com.adrianoavelar.controller;
 
 
-import java.util.logging.Level;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.logging.Logger;
+
+import javax.swing.table.DefaultTableModel;
 
 import com.adrianoavelar.model.Cliente;
 import com.adrianoavelar.model.IDAO;
 import com.adrianoavelar.model.SQLiteDao;
+import com.adrianoavelar.util.Util;
 import com.adrianoavelar.view.UtilGUI;
 
 /**
@@ -52,5 +56,21 @@ public class CCadastroCliente  {
 		return false;
 	}
 
+	public DefaultTableModel procurarCliente(String coluna, String criterio){
+		
+		ResultSet rs = (ResultSet) dao.pesquisaComRetorno("clientes",coluna, criterio);
+		DefaultTableModel model = null;
+		
+		try {
+			model =  Util.buildTableModel(rs);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return model;
+	}
+	
+	
 
 }

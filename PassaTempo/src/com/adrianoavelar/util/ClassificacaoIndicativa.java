@@ -10,7 +10,7 @@ public enum ClassificacaoIndicativa {
 	DOZE("Doze"),
 	QUATORZE("Quatorze"),
 	DEZESSEIS("Dezesseis"),
-	DEZOITE("Dezoito");
+	DEZOITO("Dezoito");
 	
 	private String ci;
 	private static String names[];
@@ -38,9 +38,7 @@ public enum ClassificacaoIndicativa {
 		for(int i = 0; i < values.length; i++){
 			names[i] = values[i].name();
 		}
-		
 		return names;
-		
 	}
 	
 	@Override

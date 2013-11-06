@@ -133,4 +133,10 @@ public class Cliente {
 		
 		return output.toString();
 	}
+	
+	public String[] getCampos(){
+		String campos[] = {"Id","Nome","Endereco","CPF","Sexo","Bairro","Cidade","Estado","CEP","Telefone","Data_Cadastro"};
+		return campos;
+	}
+	
 }

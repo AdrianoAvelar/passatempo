@@ -6,29 +6,42 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.awt.event.MouseAdapter;
+import java.io.File;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.logging.Logger;
 
+import javax.swing.BorderFactory;
 import javax.swing.Box;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JDialog;
+import javax.swing.JFileChooser;
+import javax.swing.JFormattedTextField;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.table.DefaultTableModel;
 
 import com.adrianoavelar.controller.CCadastroFilmes;
+import com.adrianoavelar.model.Filme;
 import com.adrianoavelar.util.ClassificacaoIndicativa;
 import com.adrianoavelar.util.Generos;
+import com.adrianoavelar.util.OpenFileFilter;
+import com.adrianoavelar.util.Resource;
+import com.adrianoavelar.util.Util;
 
 public class CadastroDeFilmes extends JDialog {
 	
 	private static Logger LOG = Logger.getLogger(CadastroDeFilmes.class.getName());
 	private JTextField tfTituloOriginal;
 	private JTextField tfTituloTraduzido;
-	private JTextField tfDuracao;
-	private JTextField tfAnoLancamento;
+	private JFormattedTextField tfDuracao;
+	private JFormattedTextField tfAnoLancamento;
 	private ManipuladorEventos meventos;
 	private JLabel lblCImagem;
 	private JComboBox cbClassificacaoIndicativa;
@@ -36,85 +49,91 @@ public class CadastroDeFilmes extends JDialog {
 	private JButton btnSalvar;
 	private JButton btnCancelar; 
 	private CCadastroFilmes controller;
+	private JTextField tfFilmeImagem;
+	private JComboBox cbIdioma;
+	private JComboBox cbGenero;
 	
 	public CadastroDeFilmes() {
 		
+		setTitle("Cadastro de Filme");
 		meventos = new ManipuladorEventos();
-		
+		setResizable(false); 
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-		setSize(527,260);
-		
+		setSize(527,300);
+		setLocationRelativeTo(null);
 		getContentPane().setLayout(new BorderLayout(0, 0));
 		
 		JLabel lblCadastrarFilmes = new JLabel("Cadastrar Filmes");
+		lblCadastrarFilmes.setIcon(new ImageIcon(Resource.getImageResourcePath()+"ib_cadastrar_filmes.png"));
 		getContentPane().add(lblCadastrarFilmes, BorderLayout.NORTH);
 		
 		JPanel painelCentro = new JPanel();
+		painelCentro.setBorder(BorderFactory.createTitledBorder("Dados do Filme"));
 		getContentPane().add(painelCentro, BorderLayout.CENTER);
 		painelCentro.setLayout(null);
 		
 		JLabel lblNome = new JLabel("T\u00EDtulo Original:");
-		lblNome.setBounds(10, 15, 103, 14);
+		lblNome.setBounds(10, 23, 103, 14);
 		painelCentro.add(lblNome);
 		
 		JLabel lblDurao = new JLabel("Dura\u00E7\u00E3o:");
-		lblDurao.setBounds(11, 75, 59, 14);
+		lblDurao.setBounds(11, 83, 59, 14);
 		painelCentro.add(lblDurao);
 		
 		JLabel lblAnoDeLanamento = new JLabel("Ano de Lan\u00E7amento:");
-		lblAnoDeLanamento.setBounds(157, 75, 120, 14);
+		lblAnoDeLanamento.setBounds(157, 83, 120, 14);
 		painelCentro.add(lblAnoDeLanamento);
 		
 		tfTituloOriginal = new JTextField();
-		tfTituloOriginal.setBounds(96, 9, 405, 20);
+		tfTituloOriginal.setBounds(96, 17, 405, 20);
 		painelCentro.add(tfTituloOriginal);
 		tfTituloOriginal.setColumns(10);
 		
 		tfTituloTraduzido = new JTextField();
 		tfTituloTraduzido.setEditable(false);
 		tfTituloTraduzido.setColumns(10);
-		tfTituloTraduzido.setBounds(128, 39, 373, 20);
+		tfTituloTraduzido.setBounds(128, 47, 373, 20);
 		painelCentro.add(tfTituloTraduzido);
 		
-		tfDuracao = new JTextField();
-		tfDuracao.setBounds(67, 69, 46, 20);
+		tfDuracao = new JFormattedTextField(Util.get3NumMask());
+		tfDuracao.setBounds(67, 77, 46, 20);
 		painelCentro.add(tfDuracao);
 		tfDuracao.setColumns(10);
 		
 		JLabel lblMin = new JLabel("min");
-		lblMin.setBounds(120, 75, 27, 14);
+		lblMin.setBounds(120, 83, 27, 14);
 		painelCentro.add(lblMin);
 		
-		tfAnoLancamento = new JTextField();
+		tfAnoLancamento = new JFormattedTextField(Util.get4NumMask());
 		tfAnoLancamento.setColumns(10);
-		tfAnoLancamento.setBounds(275, 69, 59, 20);
+		tfAnoLancamento.setBounds(275, 77, 59, 20);
 		painelCentro.add(tfAnoLancamento);
 		
 		chckbxTituloTrad = new JCheckBox("T\u00EDtulo Traduzido:");
 		chckbxTituloTrad.addItemListener(meventos);
 		chckbxTituloTrad.setSelected(false);
-		chckbxTituloTrad.setBounds(6, 36, 120, 23);
+		chckbxTituloTrad.setBounds(6, 44, 120, 23);
 		painelCentro.add(chckbxTituloTrad);
 		
-		JComboBox cbGenero = new JComboBox(Generos.names());
-		cbGenero.setBounds(66, 104, 157, 20);
+		cbGenero = new JComboBox(Generos.names());
+		cbGenero.setBounds(66, 112, 157, 20);
 		painelCentro.add(cbGenero);
 		
 		JLabel lblGnero = new JLabel("G\u00EAnero:");
-		lblGnero.setBounds(10, 110, 59, 14);
+		lblGnero.setBounds(10, 118, 59, 14);
 		painelCentro.add(lblGnero);
 		
 		JLabel lblIdioma = new JLabel("Idioma:");
-		lblIdioma.setBounds(344, 75, 60, 14);
+		lblIdioma.setBounds(344, 83, 60, 14);
 		painelCentro.add(lblIdioma);
 		
 		String idiomas[] = {"Português","Inglês"};
-		JComboBox cbIdioma = new JComboBox(idiomas);
-		cbIdioma.setBounds(395, 69, 106, 20);
+		cbIdioma = new JComboBox(idiomas);
+		cbIdioma.setBounds(395, 77, 106, 20);
 		painelCentro.add(cbIdioma);
 		
 		JLabel lblD = new JLabel("Classifica\u00E7\u00E3o:");
-		lblD.setBounds(244, 110, 142, 14);
+		lblD.setBounds(244, 118, 142, 14);
 		painelCentro.add(lblD);
 		
 //		String ci[] = {"L","10","12","14","16","18"};
@@ -125,15 +144,27 @@ public class CadastroDeFilmes extends JDialog {
 		cbClassificacaoIndicativa = new JComboBox(ClassificacaoIndicativa.names());
 		cbClassificacaoIndicativa.addItemListener(meventos);
 		
-		cbClassificacaoIndicativa.setBounds(339, 107, 93, 20);
+		cbClassificacaoIndicativa.setBounds(339, 115, 93, 20);
 		painelCentro.add(cbClassificacaoIndicativa);
 		
 		lblCImagem = new JLabel("");
 		ClassificacaoIndicativa ci = ClassificacaoIndicativa.valueOf(cbClassificacaoIndicativa.getSelectedItem().toString()); 
 		lblCImagem.setIcon(ci.getImage());
 		
-		lblCImagem.setBounds(442, 104, 59, 56);
+		lblCImagem.setBounds(442, 112, 59, 56);
 		painelCentro.add(lblCImagem);
+		
+		JLabel lblImage = new JLabel("Image:");
+		lblImage.setBounds(10, 151, 46, 14);
+		painelCentro.add(lblImage);
+		
+		tfFilmeImagem = new JTextField();
+		tfFilmeImagem.addMouseListener(meventos);
+		tfFilmeImagem.setText("<Selecione uma Imagem>");
+		tfFilmeImagem.setEditable(false);
+		tfFilmeImagem.setColumns(10);
+		tfFilmeImagem.setBounds(64, 145, 368, 20);
+		painelCentro.add(tfFilmeImagem);
 		
 		JPanel painelInferior = new JPanel();
 		getContentPane().add(painelInferior, BorderLayout.SOUTH);
@@ -151,7 +182,7 @@ public class CadastroDeFilmes extends JDialog {
 		// TODO Auto-generated constructor stub
 	}
 
-	private class ManipuladorEventos implements ItemListener, ActionListener{
+	private class ManipuladorEventos extends MouseAdapter implements ItemListener, ActionListener{
 
 		@Override
 		public void itemStateChanged(ItemEvent e) {
@@ -175,24 +206,66 @@ public class CadastroDeFilmes extends JDialog {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 
+			
 			if(e.getSource() == btnSalvar){
+				
+				Filme filme = new Filme();
+				filme.setTituloOriginal(tfTituloOriginal.getText());
+				filme.setTituloTraduzido(tfTituloTraduzido.getText());
+				filme.setImagemFilme(tfFilmeImagem.getText());
+				filme.setIdioma(cbIdioma.getSelectedItem().toString());
+				filme.setGenero(Generos.getValueOf(cbGenero.getSelectedItem().toString()));
+				filme.setDuracao(Integer.parseInt(tfDuracao.getText()));
+				filme.setClassificacao(ClassificacaoIndicativa.valueOf(
+						cbClassificacaoIndicativa.getSelectedItem().toString()));
+				filme.setAnoDeLancamento(Integer.parseInt(tfAnoLancamento.getText()));
+				
+				if (controller.cadastrarFilme(filme)) {
+					UtilGUI.successMessage("Filme Cadastrado com Sucesso!");
+					dispose();
+				}
 				
 			}else if(e.getSource() == btnCancelar){
 				dispose();
 			}
 		}
-		
-	}
-	
-	/**
-	 * Este método é usado apenas para testar a janela de cadastro de filmes
-	 * sem a necessidade de rodar a aplicação inteira.
-	 * @TODO Remover este método na versão final.
-	 */
-	public static void main(String[] args) {
-		
-		CadastroDeFilmes cadastrarFilmes = new CadastroDeFilmes();
-		cadastrarFilmes.setVisible(true);
+
+		@Override
+		public void mouseClicked(java.awt.event.MouseEvent e) {
+			if(e.getSource() == tfFilmeImagem){
+				
+				File fileimg;
+				JFileChooser chooser = new JFileChooser(new File(System.getProperty("user.dir")));
+				//Seleciona a extensão PNG como padrão.
+				chooser.setFileFilter(new OpenFileFilter(".png","Imagens em PNG") );
+				//Adciona outras possibildiade de extenção.
+				chooser.addChoosableFileFilter(new OpenFileFilter(".jpeg","Imagens em JPEG") );
+				chooser.addChoosableFileFilter(new OpenFileFilter(".jpg","Imagens em JPEG") );
+				
+				int returnVal = chooser.showSaveDialog(CadastroDeFilmes.this);
+				
+				if (returnVal == JFileChooser.APPROVE_OPTION) {
+				     fileimg = chooser.getSelectedFile();
+				     String filename = fileimg.getPath();
+				     
+				   	LOG.info("File Choosed: "+ filename);
+				   	
+				   	int dialogResult ;
+				   	
+				   	dialogResult = JOptionPane.showConfirmDialog(null,
+				   			Util.getFileName(filename) ,"Capa do Filme",0,0, new ImageIcon(filename));
+				   	
+				   	//Usa a imagem selecionada apenas se houver confirmação SIM(YES)
+				   	if(dialogResult == JOptionPane.YES_OPTION){
+				   		LOG.info("File Choosed: "+ filename);
+				   		tfFilmeImagem.setText(filename);
+				   	}
+				}
+				
+			}
+		}
+
+
 	}
 
 	public void setContoller( CCadastroFilmes controller) {
@@ -202,11 +275,29 @@ public class CadastroDeFilmes extends JDialog {
 	@Deprecated
 	public void preencherCampos() {
 		
-//		 tfTituloOriginal.setText("17 Anos, Outra Vez!");
-//		 tfTituloTraduzido;
-//		 tfDuracao;
-//		 tfAnoLancamento;
+		 tfTituloOriginal.setText("A Ocasião faz o ladrão!");
+		 tfTituloTraduzido.setEditable(true);
+		 tfTituloTraduzido.setText("The opportunitie makes the thief");;
+		 
+		 tfDuracao.setText("180");
+		 tfAnoLancamento.setText("1986");
+		 tfFilmeImagem.setText("C:\\Users\\Adriano\\git\\PassaTempo\\PassaTempo\\res\\FilmesImagens");
 		
+	}
+	
+
+	
+	
+	/**
+	 * Este método é usado apenas para testar a janela de cadastro de filmes
+	 * sem a necessidade de rodar a aplicação inteira.
+	 * @TODO Remover este método na versão final.
+	 */
+	public static void main(String[] args) {
 		
+		CadastroDeFilmes cadastrarFilmes = new CadastroDeFilmes();
+		cadastrarFilmes.setContoller(new CCadastroFilmes());
+		cadastrarFilmes.preencherCampos();
+		cadastrarFilmes.setVisible(true);
 	}
 }
