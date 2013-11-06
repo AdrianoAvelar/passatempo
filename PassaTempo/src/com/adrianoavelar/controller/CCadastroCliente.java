@@ -3,7 +3,7 @@ package com.adrianoavelar.controller;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 import javax.swing.table.DefaultTableModel;
 
@@ -11,7 +11,7 @@ import com.adrianoavelar.model.Cliente;
 import com.adrianoavelar.model.IDAO;
 import com.adrianoavelar.model.SQLiteDao;
 import com.adrianoavelar.util.Util;
-import com.adrianoavelar.view.UtilGUI;
+import com.adrianoavelar.util.UtilGUI;
 
 /**
  * Controlador que gerencia o cadastro de novos usuários no banco de dados.
@@ -26,7 +26,7 @@ import com.adrianoavelar.view.UtilGUI;
 
 public class CCadastroCliente  {
 
-	private static final Logger LOG = Logger.getLogger(CCadastroCliente.class.getName());
+	private static Logger LOG = Logger.getLogger(CCadastroFilmes.class);
 	
 	private IDAO dao;
 	public CCadastroCliente() {
@@ -34,7 +34,7 @@ public class CCadastroCliente  {
 	}
 
 	public boolean cadastrarCliente(Cliente cliente) {
-		LOG.info("Cadastrando Cliente:\n" + cliente);
+		LOG.debug("Cadastrando Cliente:\n" + cliente);
 				
 		boolean res = false;
 		
@@ -44,7 +44,7 @@ public class CCadastroCliente  {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			//e.printStackTrace();
-			LOG.severe("Erro ao cadastrar cliente: "+e.getMessage());
+			LOG.error("Erro ao cadastrar cliente: "+e.getMessage());
 			UtilGUI.errorMessage("Erro ao cadastrar cliente: "+e.getMessage());
 		}
 		

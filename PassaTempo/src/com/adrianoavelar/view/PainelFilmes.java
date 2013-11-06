@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -25,7 +25,7 @@ import com.adrianoavelar.util.Util;
 
 public class PainelFilmes extends JPanel {
 	
-	private static Logger LOG = Logger.getLogger(PainelFilmes.class.getName());
+	private static Logger LOG = Logger.getLogger(CCadastroFilmes.class);
 	private static final long serialVersionUID = 7879116841216780795L;
 	private JTextField tfCriterio;
 	private JTable jtFilmes;
@@ -96,7 +96,7 @@ public class PainelFilmes extends JPanel {
 		         int row = jtFilmes.getSelectedRow();
 		         int column = jtFilmes.getSelectedColumn();
 		         
-		         LOG.info("row: "+ row + " column: "+column);
+		         LOG.debug("row: "+ row + " column: "+column);
 		         
 		         String valores[] = new String[jtFilmes.getColumnCount()];
 		         for(int i = 0; i < valores.length; i++){

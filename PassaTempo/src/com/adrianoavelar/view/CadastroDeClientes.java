@@ -27,6 +27,7 @@ import com.adrianoavelar.controller.CCadastroCliente;
 import com.adrianoavelar.model.Cliente;
 import com.adrianoavelar.util.EstadosBrasil;
 import com.adrianoavelar.util.Resource;
+import com.adrianoavelar.util.UtilGUI;
 
 public class CadastroDeClientes extends JDialog {
 

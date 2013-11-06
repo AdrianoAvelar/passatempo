@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -20,13 +20,14 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 
 import com.adrianoavelar.controller.CCadastroCliente;
+import com.adrianoavelar.controller.CCadastroFilmes;
 import com.adrianoavelar.model.Cliente;
 import com.adrianoavelar.util.Resource;
 import com.adrianoavelar.util.Util;
 
 public class PainelClientes extends JPanel {
 	
-	private static Logger LOG = Logger.getLogger(PainelClientes.class.getName());
+	private static Logger LOG = Logger.getLogger(CCadastroFilmes.class);
 	private static final long serialVersionUID = 7879116841216780795L;
 	private JTextField tfCriterio;
 	private JTable jtClientes;
@@ -99,7 +100,7 @@ public class PainelClientes extends JPanel {
 		         int row = jtClientes.getSelectedRow();
 		         int column = jtClientes.getSelectedColumn();
 		         
-		         LOG.info("row: "+ row + " column: "+column);
+		         LOG.debug("row: "+ row + " column: "+column);
 		         
 		         String valores[] = new String[jtClientes.getColumnCount()];
 		         for(int i = 0; i < valores.length; i++){

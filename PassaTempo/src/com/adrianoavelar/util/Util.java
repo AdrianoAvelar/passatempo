@@ -5,14 +5,16 @@ import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.util.Vector;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 import javax.swing.table.DefaultTableModel;
 import javax.swing.text.MaskFormatter;
 
+import com.adrianoavelar.controller.CCadastroFilmes;
+
 public class Util {
 
-	private static Logger LOG = Logger.getLogger(Util.class.getName());
+	private static Logger LOG = Logger.getLogger(CCadastroFilmes.class);
 	
 	public Util() {
 		// TODO Auto-generated constructor stub
@@ -38,7 +40,7 @@ public class Util {
             mask = new MaskFormatter("(###) ###-####");
             mask.setPlaceholderCharacter('_'); //Caracter substitutivo
         } catch (ParseException e) {
-            LOG.severe("Erro ao obter a mascara para telefone: "+e.getMessage());
+            LOG.error("Erro ao obter a mascara para telefone: "+e.getMessage());
         }
         
         return mask;
@@ -57,7 +59,7 @@ public class Util {
             mask = new MaskFormatter("####");
             mask.setPlaceholderCharacter('_'); //Caracter substitutivo
         } catch (ParseException e) {
-            LOG.severe("Erro ao obter a mascara para 4 digitos: "+e.getMessage());
+            LOG.error("Erro ao obter a mascara para 4 digitos: "+e.getMessage());
         }
         
         return mask;
@@ -76,7 +78,7 @@ public class Util {
             mask = new MaskFormatter("###");
             mask.setPlaceholderCharacter('_'); //Caracter substitutivo
         } catch (ParseException e) {
-            LOG.severe("Erro ao obter a mascara Numerica de 3 digitos: "+e.getMessage());
+            LOG.error("Erro ao obter a mascara Numerica de 3 digitos: "+e.getMessage());
         }
         
         return mask;
@@ -94,7 +96,7 @@ public class Util {
 			out.append(array.getClass().getSimpleName()+" - [" + i + "] = "+array[i] +"\n");
 		}
 		
-		LOG.info(out.toString());
+		LOG.debug(out.toString());
 	}
 	
 	public static DefaultTableModel buildTableModel(ResultSet rs)

@@ -10,7 +10,7 @@ import java.awt.event.MouseAdapter;
 import java.io.File;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 import javax.swing.BorderFactory;
 import javax.swing.Box;
@@ -34,10 +34,11 @@ import com.adrianoavelar.util.Generos;
 import com.adrianoavelar.util.OpenFileFilter;
 import com.adrianoavelar.util.Resource;
 import com.adrianoavelar.util.Util;
+import com.adrianoavelar.util.UtilGUI;
 
 public class CadastroDeFilmes extends JDialog {
 	
-	private static Logger LOG = Logger.getLogger(CadastroDeFilmes.class.getName());
+	private static Logger LOG = Logger.getLogger(CCadastroFilmes.class);
 	private JTextField tfTituloOriginal;
 	private JTextField tfTituloTraduzido;
 	private JFormattedTextField tfDuracao;
@@ -191,7 +192,7 @@ public class CadastroDeFilmes extends JDialog {
 				if(e.getStateChange() == ItemEvent.SELECTED){
 					ClassificacaoIndicativa ci = ClassificacaoIndicativa.valueOf(cbClassificacaoIndicativa.getSelectedItem().toString()); 
 					lblCImagem.setIcon(ci.getImage());
-					LOG.info("Classificação Indicativa | Item Selecionado: "+ci);
+					LOG.debug("Classificação Indicativa | Item Selecionado: "+ci);
 				}
 			}else if(e.getSource() == chckbxTituloTrad){
 				if(!chckbxTituloTrad.isSelected()){
@@ -248,7 +249,7 @@ public class CadastroDeFilmes extends JDialog {
 				     fileimg = chooser.getSelectedFile();
 				     String filename = fileimg.getPath();
 				     
-				   	LOG.info("File Choosed: "+ filename);
+				   	LOG.debug("File Choosed: "+ filename);
 				   	
 				   	int dialogResult ;
 				   	
@@ -257,7 +258,7 @@ public class CadastroDeFilmes extends JDialog {
 				   	
 				   	//Usa a imagem selecionada apenas se houver confirmação SIM(YES)
 				   	if(dialogResult == JOptionPane.YES_OPTION){
-				   		LOG.info("File Choosed: "+ filename);
+				   		LOG.debug("File Choosed: "+ filename);
 				   		tfFilmeImagem.setText(filename);
 				   	}
 				}

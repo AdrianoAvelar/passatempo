@@ -3,7 +3,9 @@ package com.adrianoavelar.model;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
+
+import com.adrianoavelar.controller.CCadastroFilmes;
 
 /************
  * SQLite é uma biblioteca em linguagem C que implementa um banco de dados SQL embutido.
@@ -16,7 +18,7 @@ import java.util.logging.Logger;
  ************/
 public class SQLiteDao  implements IDAO {
 
-	private static final Logger LOG = Logger.getLogger(SQLiteDao.class.getName());
+	private static Logger LOG = Logger.getLogger(CCadastroFilmes.class);
 	private SQLiteHandler sqlite;
 	public SQLiteDao() {
 		sqlite = new SQLiteHandler();
@@ -35,7 +37,7 @@ public class SQLiteDao  implements IDAO {
 				+ "nome,endereco,bairro,cidade,estado,cpf,cep,tel,sexo) "
 				+ "VALUES("+extractClienteInfo(client)+ ");";
 		
-		LOG.info("SQL Gerado: "+sql);
+		//LOG.debug("SQL Gerado: "+sql);
 		sqlite.executeUpdate(sql);
 	}
 	
@@ -93,7 +95,7 @@ public class SQLiteDao  implements IDAO {
 				+ "titulo_original,titulo_traduzido,duracao,ano,idioma,genero,classificacao,imagem) "
 				+ "VALUES("+extractFilmeInfo(filme)+ ");";
 		
-		LOG.info("SQL Gerado: "+sql);
+		//LOG.debug("SQL Gerado: "+sql);
 		sqlite.executeUpdate(sql);
 	}
 
@@ -120,7 +122,7 @@ public class SQLiteDao  implements IDAO {
 			sql += " WHERE "+coluna+" LIKE '%"+criterio+"%'";
 		}
 		
-		LOG.info("Sql: "+sql);
+		LOG.debug("Sql: "+sql);
 		
 		 try {
 			rs = sqlite.executeQuery(sql);

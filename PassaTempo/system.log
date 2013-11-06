@@ -1,0 +1,4 @@
+16:08:54.921 [AWT-EventQueue-0] ERROR com.adrianoavelar.controller.CCadastroFilmes - (CCadastroFilmes.java:36) 
+Erro ao cadastrar filme: columns titulo_original, titulo_traduzido, ano are not unique
+16:09:31.512 [AWT-EventQueue-0] ERROR com.adrianoavelar.controller.CCadastroFilmes - (CCadastroFilmes.java:36) 
+Erro ao cadastrar filme: columns titulo_original, titulo_traduzido, ano are not unique
