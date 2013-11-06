@@ -1,4 +1,4 @@
-package com.adrianoavelar.view;
+package com.adrianoavelar.util;
 
 import javax.swing.JOptionPane;
 
