@@ -12,7 +12,7 @@ public class SQLiteHandler {
 	private Statement stmt = null;
 	
 	public boolean openDB(){
-		return openDB("banco01.sqlite");
+		return openDB("unnamed.sqlite");
 	}
 	
 	public boolean openDB(String dbname){
