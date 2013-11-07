@@ -12,14 +12,18 @@ import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.JTabbedPane;
+import javax.swing.JTextArea;
 import javax.swing.JToolBar;
 import javax.swing.SwingUtilities;
 
+import com.adrianoavelar.controller.CAluguel;
 import com.adrianoavelar.controller.CCadastroCliente;
 import com.adrianoavelar.controller.CCadastroFilmes;
 import com.adrianoavelar.controller.CHistorico;
 import com.adrianoavelar.util.Resource;
+import com.adrianoavelar.util.Util;
 
 /**
  * Mais sobre ToolBar {@link http://zetcode.com/tutorials/javaswingtutorial/menusandtoolbars/} 
@@ -40,6 +44,7 @@ public final class MainGUI extends JFrame {
 	private static final String ib_consultar_videos = path+"ib_consultar_videos.png";
 	private static final String ib_consultar_usuarios = path+"ib_consultar_usuarios.png";
 	private static final String ib_sair = path+"ib_sair.png";
+	private static final String ib_alugar_filme = path+"ib_alugar_filme.png";
 
 	// Componentes Globais
 
@@ -49,7 +54,7 @@ public final class MainGUI extends JFrame {
 	private JButton jbConsultarUsuarios;
 	private JButton jbConsultarVideos;
 	private JButton jbConsultarHistorico;
-	
+	private JButton jbAlugarFilme;
 	private JButton jbSair;
 	
 	private JMenuItem jmiSobre;
@@ -57,6 +62,7 @@ public final class MainGUI extends JFrame {
 	private PainelClientes painelConsultaClientes = null;
 	private PainelFilmes painelConsultaFilmes = null;
 	private PainelHistorico painelHistorico = null;
+	private PainelAluguel painelAluguel = null;
 	
 	public MainGUI() {
 		super("Locadora PassaTempo");
@@ -69,13 +75,17 @@ public final class MainGUI extends JFrame {
 		painelConsultaClientes = new PainelClientes();
 		painelConsultaClientes.setController(new CCadastroCliente());
 		
-		//Instanciando painal de consulta de filmes
+		//Instanciando painel de consulta de filmes
 		painelConsultaFilmes = new PainelFilmes();
 		painelConsultaFilmes.setController(new CCadastroFilmes());
 		
-		//Instanciando painal de consulta do historico
+		//Instanciando painel de consulta do historico
 		painelHistorico = new PainelHistorico();
 		painelHistorico.setController(new CHistorico());
+		
+		//Instanciando painel de Locação de Filmes
+		painelAluguel = new PainelAluguel();
+		painelAluguel.setController(new CAluguel());
 	}
 	
 	public void initUI() {
@@ -103,7 +113,7 @@ public final class MainGUI extends JFrame {
 		jbCadastrarUsuario.addActionListener(handler);
 
 		icon = new ImageIcon(ib_cadastrar_filmes);
-		jbCadastrarVideos = new JButton("Cadastrar Videos", icon);
+		jbCadastrarVideos = new JButton("Cadastrar Filmes", icon);
 		jbCadastrarVideos.setHorizontalTextPosition(SwingUtilities.CENTER);
 		jbCadastrarVideos.setVerticalTextPosition(SwingUtilities.BOTTOM);
 		jbCadastrarVideos.addActionListener(handler);
@@ -126,13 +136,20 @@ public final class MainGUI extends JFrame {
 		jbConsultarHistorico.setVerticalTextPosition(SwingUtilities.BOTTOM);
 		jbConsultarHistorico.addActionListener(handler);
 		
+		icon = new ImageIcon(ib_alugar_filme);
+		jbAlugarFilme = new JButton("   Alugar Filme   ", icon);
+		jbAlugarFilme.setHorizontalTextPosition(SwingUtilities.CENTER);
+		jbAlugarFilme.setVerticalTextPosition(SwingUtilities.BOTTOM);
+		jbAlugarFilme.addActionListener(handler);
+		
+		
 		icon = new ImageIcon(ib_sair);
 		jbSair = new JButton("Sair", icon);
 		jbSair.setHorizontalTextPosition(SwingUtilities.CENTER);
 		jbSair.setVerticalTextPosition(SwingUtilities.BOTTOM);
 		jbSair.addActionListener(handler);
 		
-		
+
 		//Adicionando os butões à barra de ferramenta.
 		JToolBar toolbar = new JToolBar();
 		toolbar.setFloatable(false);
@@ -142,7 +159,9 @@ public final class MainGUI extends JFrame {
 		toolbar.add(jbConsultarUsuarios);
 		toolbar.add(jbConsultarVideos);
 		toolbar.add(jbConsultarHistorico);
-		toolbar.addSeparator(new Dimension(250, 0));
+		toolbar.addSeparator();
+		toolbar.add(jbAlugarFilme);
+		toolbar.addSeparator(new Dimension(180, 0));
 		toolbar.add(jbSair);
 
 		//Adcionando a barra de ferramenta ao painel de conteudo.
@@ -154,6 +173,7 @@ public final class MainGUI extends JFrame {
 		tabbedPane.addTab("Consultar Clientes",painelConsultaClientes.getIcone(),painelConsultaClientes);
 		tabbedPane.addTab("Consultar Filmes",painelConsultaFilmes.getIcone(),painelConsultaFilmes);
 		tabbedPane.addTab("Historico",painelHistorico.getIcone(),painelHistorico);
+		tabbedPane.addTab("Aluguel de Filmes",painelAluguel.getIcone(),painelAluguel);
 		
 		container.add(tabbedPane, BorderLayout.CENTER);
 		
@@ -218,12 +238,59 @@ public final class MainGUI extends JFrame {
 				
 			}else if(e.getSource() == jbConsultarVideos){
 				
+				JFrame painelFilme = new JFrame();
+				PainelFilmes janelaExternaCliente = new PainelFilmes();
+				janelaExternaCliente.setController(new CCadastroFilmes());
+				painelFilme.add(janelaExternaCliente);
+				painelFilme.setSize(800, 600);
+				painelFilme.setVisible(true);
+				painelFilme.setLocationRelativeTo(null);
+				painelFilme.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+				
 			}else if(e.getSource() == jbConsultarHistorico){
+				
+				JFrame painelHistorico = new JFrame();
+				PainelHistorico janelaExternaCliente = new PainelHistorico();
+				janelaExternaCliente.setController(new CHistorico());
+				painelHistorico.add(janelaExternaCliente);
+				painelHistorico.setSize(800, 600);
+				painelHistorico.setVisible(true);
+				painelHistorico.setLocationRelativeTo(null);
+				painelHistorico.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+				
+			}else if(e.getSource() == jbAlugarFilme){
+				
+				JFrame painelAlugar = new JFrame();
+				PainelAluguel janelaExternaCliente = new PainelAluguel();
+				janelaExternaCliente.setController(new CAluguel());
+				painelAlugar.add(janelaExternaCliente);
+				painelAlugar.setSize(800, 500);
+				painelAlugar.setVisible(true);
+				painelAlugar.setLocationRelativeTo(null);
+				painelAlugar.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 				
 			}else if(e.getSource() == jbSair){
 				System.exit(0);
 			}else if(e.getSource() == jmiSobre){
 				
+				String about = "Sistema " +Util.getPropriedade("system_name")+"\n"
+						+ Util.createStringPattern(20)
+						+ "\nEste Sistema foi desenvolvido \n"
+						+ "para estudo dos alunos da Faculdade Nova Roma.\n"
+						+ "É um sistema bem simples de aluguel de filmes que\n"
+						+ "possui a funcionalidade de cadastro de usuário,\n"
+						+ "cadastro de filmes e aluguel de filmes por um\n "
+						+ "usuário cadastrado no sistema.\n"
+						+ Util.createStringPattern(20)
+						+ "\n@author: "+ Util.getPropriedade("author")
+						+ "\n@versão"+ Util.getPropriedade("vertion")
+						+ "\n@site: "+ Util.getPropriedade("contact");
+				
+				JTextArea output = new JTextArea();
+				output.setEditable(false);
+				output.setEnabled(false);
+				output.setText(about);
+				JOptionPane.showMessageDialog(null, output,"Locadora Passa Tempo",JOptionPane.INFORMATION_MESSAGE);
 				
 			}
 	

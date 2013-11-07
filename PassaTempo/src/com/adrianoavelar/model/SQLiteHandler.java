@@ -68,6 +68,12 @@ public class SQLiteHandler {
 		return stmt.executeQuery(sql);
 	}
 	
+	/**
+	 * Apenas para teste local. Marcado para remoção futura.
+	 * @param args
+	 * @throws SQLException
+	 */
+	@Deprecated
 	public static void main(String args[]) throws SQLException {
 		
 		SQLiteHandler sqlite = new SQLiteHandler();
@@ -82,7 +88,6 @@ public class SQLiteHandler {
 		
 		sqlite.executeUpdate(sql);
 		sqlite.closeDB();
-		
 	}
 	
 	@Override

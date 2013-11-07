@@ -37,12 +37,17 @@ public class FileDAO implements IDAO {
 		
 	}
 
-
 	@Override
 	public Object pesquisaComRetorno(String table, String coluna,
-			String criterio) {
+			String criterio, boolean withLike) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public void cadastrarTransacao(Transacao aluguel) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

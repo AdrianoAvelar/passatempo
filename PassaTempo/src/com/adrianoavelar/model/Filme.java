@@ -113,7 +113,7 @@ public class Filme {
 	}
 
 	public String[] getCampos() {
-		String campos[] = {"Id","titulo_original","titulo_traduzido","duracao","ano","idioma","genero","cassificacao","imagem"};
+		String campos[] = {"Id_Filme","titulo_original","titulo_traduzido","duracao","ano","idioma","genero","cassificacao","imagem"};
 		return campos;
 	}
 

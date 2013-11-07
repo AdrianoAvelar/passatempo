@@ -42,8 +42,6 @@ public class CCadastroCliente  {
 			dao.salvar(cliente);
 			res =  true;
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			//e.printStackTrace();
 			LOG.error("Erro ao cadastrar cliente: "+e.getMessage());
 			UtilGUI.errorMessage("Erro ao cadastrar cliente: "+e.getMessage());
 		}
@@ -58,14 +56,14 @@ public class CCadastroCliente  {
 
 	public DefaultTableModel procurarCliente(String coluna, String criterio){
 		
-		ResultSet rs = (ResultSet) dao.pesquisaComRetorno("clientes",coluna, criterio);
+		ResultSet rs = (ResultSet) dao.pesquisaComRetorno("clientes",coluna, criterio,true);
 		DefaultTableModel model = null;
 		
 		try {
 			model =  Util.buildTableModel(rs);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			LOG.error(e.getMessage());
 		}
 		
 		return model;

@@ -27,7 +27,7 @@ import com.adrianoavelar.util.Util;
 
 public class PainelClientes extends JPanel {
 	
-	private static Logger LOG = Logger.getLogger(CCadastroFilmes.class);
+	private static Logger LOG = Logger.getLogger(PainelClientes.class);
 	private static final long serialVersionUID = 7879116841216780795L;
 	private JTextField tfCriterio;
 	private JTable jtClientes;

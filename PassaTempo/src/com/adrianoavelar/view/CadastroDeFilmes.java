@@ -38,7 +38,7 @@ import com.adrianoavelar.util.UtilGUI;
 
 public class CadastroDeFilmes extends JDialog {
 	
-	private static Logger LOG = Logger.getLogger(CCadastroFilmes.class);
+	private static Logger LOG = Logger.getLogger(CadastroDeFilmes.class);
 	private JTextField tfTituloOriginal;
 	private JTextField tfTituloTraduzido;
 	private JFormattedTextField tfDuracao;
@@ -282,7 +282,7 @@ public class CadastroDeFilmes extends JDialog {
 		 
 		 tfDuracao.setText("180");
 		 tfAnoLancamento.setText("1986");
-		 tfFilmeImagem.setText("C:\\Users\\Adriano\\git\\PassaTempo\\PassaTempo\\res\\FilmesImagens");
+		 tfFilmeImagem.setText("C:\\Users\\Adriano\\git\\PassaTempo\\PassaTempo\\res\\FilmesImagens\\a_ocasiao_faz_o_ladrao.png");
 		
 	}
 	

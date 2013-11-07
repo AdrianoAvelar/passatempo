@@ -18,7 +18,7 @@ import com.adrianoavelar.controller.CCadastroFilmes;
  ************/
 public class SQLiteDao  implements IDAO {
 
-	private static Logger LOG = Logger.getLogger(CCadastroFilmes.class);
+	private static Logger LOG = Logger.getLogger(SQLiteDao.class);
 	private SQLiteHandler sqlite;
 	public SQLiteDao() {
 		sqlite = new SQLiteHandler();
@@ -112,14 +112,46 @@ public class SQLiteDao  implements IDAO {
 		return out.toString();
 	}
 
+	
+	
+	public Object pesquisaComRetorno(String coluna, String criterio, boolean withLike) {
+
+		ResultSet rs = null;
+		String sql = "SELECT transacoes.id_transacao,clientes.id_cliente,clientes.nome,filmes.titulo_original,"
+				+ "  filmes.titulo_traduzido, transacoes.data FROM transacoes,clientes,filmes"
+				+ " WHERE transacoes.id_cliente = clientes.id_cliente AND  transacoes.id_filme = filmes.id_filme ";
+		
+		if(!criterio.equals("")){
+			if(withLike)
+				sql += " AND "+coluna+" LIKE '%"+criterio+"%'";
+			else
+				sql += " AND "+coluna+" = '"+criterio+"'";
+		}
+		
+	
+		LOG.debug("Sql: "+sql);
+		
+		 try {
+			rs = sqlite.executeQuery(sql);
+	
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			LOG.error(e.getMessage());
+		}
+		
+		 return rs;
+	}
+	
 	@Override
-	public Object pesquisaComRetorno(String table, String coluna, String criterio) {
-		
-		
+	public Object pesquisaComRetorno(String table, String coluna, String criterio, boolean withLike) {
+
 		ResultSet rs = null;
 		String sql = "SELECT * FROM main."+table;
-		if(!criterio.equals("") ){
-			sql += " WHERE "+coluna+" LIKE '%"+criterio+"%'";
+		if(!criterio.equals("")){
+			if(withLike)
+				sql += " WHERE "+coluna+" LIKE '%"+criterio+"%'";
+			else
+				sql += " WHERE "+coluna+" = '"+criterio+"'";
 		}
 		
 		LOG.debug("Sql: "+sql);
@@ -129,10 +161,29 @@ public class SQLiteDao  implements IDAO {
 	
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			LOG.error(e.getMessage());
 		}
 		
 		 return rs;
+	}
+
+	@Override
+	public void cadastrarTransacao(Transacao aluguel) throws SQLException {
+		
+		String sql = "";
+		
+		int filmesIds[] = aluguel.getFilmesIds();
+		int idCliente = aluguel.getIdCliente();
+		
+		for(int i = 0; i < filmesIds.length; i++ ){
+			sql = "INSERT INTO main.transacoes(id_cliente,id_filme) "
+					+ "VALUES (" +idCliente+","+filmesIds[i]+")";
+					
+			LOG.debug("Sql: "+sql);
+			
+			sqlite.executeUpdate(sql);
+		}
+		
 	}
 
 }

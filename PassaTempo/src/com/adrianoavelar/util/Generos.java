@@ -56,7 +56,7 @@ public enum Generos {
     	Generos[] generos = values();
     	Generos ret = null;
     	 for (int i = 0; i < generos.length; i++) {
-    		 if(str.equals(generos[i].toString()))
+    		 if(str.equalsIgnoreCase(generos[i].toString()))
     		{
     			 ret= generos[i];
     			 break;

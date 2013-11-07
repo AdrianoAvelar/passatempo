@@ -1,4 +1,542 @@
-16:08:54.921 [AWT-EventQueue-0] ERROR com.adrianoavelar.controller.CCadastroFilmes - (CCadastroFilmes.java:36) 
-Erro ao cadastrar filme: columns titulo_original, titulo_traduzido, ano are not unique
-16:09:31.512 [AWT-EventQueue-0] ERROR com.adrianoavelar.controller.CCadastroFilmes - (CCadastroFilmes.java:36) 
-Erro ao cadastrar filme: columns titulo_original, titulo_traduzido, ano are not unique
+DEBUG 18:46:29 [AWT-EventQueue-0] Titulo Original: A Ocasião faz o ladrão!
+Titulo Traduzido: The opportunitie makes the thief
+Duracao: 180
+Ano de Lancamento: 1986
+Idioma: Português
+Genero: AÇÃO
+Classificacao: LIVRE
+Imagem: C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens - (CCadastroFilmes.java:27)
+ERROR 18:46:29 [AWT-EventQueue-0] Erro ao cadastrar filme: columns titulo_original, titulo_traduzido, ano are not unique - (CCadastroFilmes.java:35)
+DEBUG 21:38:27 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE nome LIKE '%adriano%' - (SQLiteDao.java:125)
+DEBUG 21:38:27 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE nome LIKE '%adriano%' - (SQLiteDao.java:125)
+DEBUG 22:09:28 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '2' - (SQLiteDao.java:127)
+ERROR 22:10:53 [AWT-EventQueue-0] column 0 out of bounds [1,11] - (CAluguel.java:33)
+DEBUG 22:13:01 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '2' - (SQLiteDao.java:127)
+DEBUG 22:14:56 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '2' - (SQLiteDao.java:127)
+DEBUG 22:16:39 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '2' - (SQLiteDao.java:127)
+DEBUG 22:17:18 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '2' - (SQLiteDao.java:127)
+DEBUG 22:17:18 [AWT-EventQueue-0] getClienteInfoById: [id=2, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678935, nome=Adriano Avelar, data_cadastro=2013-10-30 00:28:25, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:240)
+DEBUG 22:24:03 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '123' - (SQLiteDao.java:127)
+DEBUG 22:24:03 [AWT-EventQueue-0] getClienteInfoById: [id=null, cidade=null, bairro=null, cep=null, estado=null, tel=null, sexo=null, cpf=null, nome=null, data_cadastro=null, endereco=null] - (PainelAluguel.java:241)
+DEBUG 22:25:11 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1333' - (SQLiteDao.java:127)
+DEBUG 22:25:11 [AWT-EventQueue-0] getClienteInfoById: [id=null, cidade=null, bairro=null, cep=null, estado=null, tel=null, sexo=null, cpf=null, nome=null, data_cadastro=null, endereco=null] - (PainelAluguel.java:241)
+DEBUG 22:25:11 [AWT-EventQueue-0] not entry: 11 - (PainelAluguel.java:242)
+DEBUG 22:26:43 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '32' - (SQLiteDao.java:127)
+DEBUG 22:26:43 [AWT-EventQueue-0] getClienteInfoById: [] - (PainelAluguel.java:241)
+DEBUG 22:26:43 [AWT-EventQueue-0] not entry: 0 - (PainelAluguel.java:242)
+DEBUG 22:27:42 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 22:27:42 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:241)
+DEBUG 22:27:42 [AWT-EventQueue-0] not entry: 11 - (PainelAluguel.java:242)
+DEBUG 22:27:55 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '323' - (SQLiteDao.java:127)
+DEBUG 22:27:55 [AWT-EventQueue-0] getClienteInfoById: [] - (PainelAluguel.java:241)
+DEBUG 22:27:55 [AWT-EventQueue-0] not entry: 0 - (PainelAluguel.java:242)
+DEBUG 22:27:57 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 22:27:57 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:241)
+DEBUG 22:27:57 [AWT-EventQueue-0] not entry: 11 - (PainelAluguel.java:242)
+DEBUG 22:28:41 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '123' - (SQLiteDao.java:127)
+DEBUG 22:28:41 [AWT-EventQueue-0] getClienteInfoById: [] - (PainelAluguel.java:241)
+DEBUG 22:28:41 [AWT-EventQueue-0] not entry: 0 - (PainelAluguel.java:242)
+DEBUG 22:28:46 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 22:28:46 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:241)
+DEBUG 22:28:46 [AWT-EventQueue-0] not entry: 11 - (PainelAluguel.java:242)
+DEBUG 22:29:01 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 22:29:01 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:241)
+DEBUG 22:29:01 [AWT-EventQueue-0] not entry: 11 - (PainelAluguel.java:242)
+DEBUG 22:29:22 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 22:29:22 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:241)
+DEBUG 22:29:40 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 22:29:40 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:241)
+DEBUG 22:32:54 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 22:32:54 [AWT-EventQueue-0] getClienteInfoById: [id=1, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:258)
+DEBUG 22:39:46 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '454' - (SQLiteDao.java:127)
+DEBUG 22:39:46 [AWT-EventQueue-0] getClienteInfoById: [] - (PainelAluguel.java:263)
+DEBUG 22:39:58 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 22:39:58 [AWT-EventQueue-0] getClienteInfoById: [id=1, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:263)
+DEBUG 22:43:10 [AWT-EventQueue-0] File Choosed: C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png - (CadastroDeFilmes.java:252)
+DEBUG 22:43:11 [AWT-EventQueue-0] File Choosed: C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png - (CadastroDeFilmes.java:261)
+DEBUG 22:43:13 [AWT-EventQueue-0] Titulo Original: A Ocasião faz o ladrão!
+Titulo Traduzido: The opportunitie makes the thief
+Duracao: 180
+Ano de Lancamento: 1986
+Idioma: Português
+Genero: AÇÃO
+Classificacao: LIVRE
+Imagem: C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png - (CCadastroFilmes.java:27)
+ERROR 22:43:16 [AWT-EventQueue-0] Erro ao cadastrar filme: columns titulo_original, titulo_traduzido, ano are not unique - (CCadastroFilmes.java:35)
+DEBUG 22:43:38 [AWT-EventQueue-0] Titulo Original: A Ocasião faz o ladrão!
+Titulo Traduzido: The opportunitie makes the thief
+Duracao: 180
+Ano de Lancamento: 1986
+Idioma: Português
+Genero: AÇÃO
+Classificacao: LIVRE
+Imagem: C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png - (CCadastroFilmes.java:27)
+ERROR 22:43:41 [AWT-EventQueue-0] Erro ao cadastrar filme: database is locked - (CCadastroFilmes.java:35)
+DEBUG 22:43:44 [AWT-EventQueue-0] Titulo Original: A Ocasião faz o ladrão!
+Titulo Traduzido: The opportunitie makes the thief
+Duracao: 180
+Ano de Lancamento: 1986
+Idioma: Português
+Genero: AÇÃO
+Classificacao: LIVRE
+Imagem: C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png - (CCadastroFilmes.java:27)
+ERROR 22:43:47 [AWT-EventQueue-0] Erro ao cadastrar filme: database is locked - (CCadastroFilmes.java:35)
+DEBUG 22:44:03 [AWT-EventQueue-0] Classificação Indicativa | Item Selecionado: Dezesseis - (CadastroDeFilmes.java:195)
+DEBUG 22:44:18 [AWT-EventQueue-0] File Choosed: C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png - (CadastroDeFilmes.java:252)
+DEBUG 22:44:19 [AWT-EventQueue-0] File Choosed: C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png - (CadastroDeFilmes.java:261)
+DEBUG 22:44:23 [AWT-EventQueue-0] Titulo Original: A Ocasião faz o ladrão!
+Titulo Traduzido: The opportunitie makes the thief
+Duracao: 180
+Ano de Lancamento: 1986
+Idioma: Português
+Genero: AÇÃO
+Classificacao: Dezesseis
+Imagem: C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png - (CCadastroFilmes.java:27)
+ERROR 22:44:26 [AWT-EventQueue-0] Erro ao cadastrar filme: database is locked - (CCadastroFilmes.java:35)
+DEBUG 22:44:36 [AWT-EventQueue-0] Titulo Original: A Ocasião faz o ladrão!
+Titulo Traduzido: The opportunitie makes the thief
+Duracao: 180
+Ano de Lancamento: 1986
+Idioma: Português
+Genero: AÇÃO
+Classificacao: Dezesseis
+Imagem: C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png - (CCadastroFilmes.java:27)
+ERROR 22:44:36 [AWT-EventQueue-0] Erro ao cadastrar filme: columns titulo_original, titulo_traduzido, ano are not unique - (CCadastroFilmes.java:35)
+DEBUG 22:45:24 [AWT-EventQueue-0] Titulo Original: A Ocasião faz o ladrão!
+Titulo Traduzido: The opportunitie makes the thief
+Duracao: 180
+Ano de Lancamento: 1986
+Idioma: Português
+Genero: AÇÃO
+Classificacao: LIVRE
+Imagem: C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens - (CCadastroFilmes.java:27)
+DEBUG 22:46:29 [AWT-EventQueue-0] Titulo Original: A Ocasião faz o ladrão!
+Titulo Traduzido: The opportunitie makes the thief
+Duracao: 180
+Ano de Lancamento: 1986
+Idioma: Português
+Genero: AÇÃO
+Classificacao: LIVRE
+Imagem: C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png - (CCadastroFilmes.java:27)
+DEBUG 22:47:01 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 22:47:01 [AWT-EventQueue-0] getClienteInfoById: [] - (PainelAluguel.java:263)
+DEBUG 22:47:05 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '2' - (SQLiteDao.java:127)
+DEBUG 22:47:05 [AWT-EventQueue-0] getClienteInfoById: [] - (PainelAluguel.java:263)
+DEBUG 22:47:07 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 22:47:07 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:263)
+DEBUG 22:49:11 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 22:49:11 [AWT-EventQueue-0] getClienteInfoById: [] - (PainelAluguel.java:263)
+DEBUG 22:55:53 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 22:55:53 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:253)
+DEBUG 22:55:56 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 22:55:56 [AWT-EventQueue-0] getClienteInfoById: [] - (PainelAluguel.java:274)
+DEBUG 22:55:59 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 22:55:59 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:274)
+DEBUG 23:14:17 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 23:14:17 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:263)
+DEBUG 23:14:20 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 23:14:20 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:284)
+DEBUG 23:14:55 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 23:14:55 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:284)
+DEBUG 23:16:49 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 23:16:49 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:263)
+DEBUG 23:16:51 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 23:16:51 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:284)
+DEBUG 23:18:17 [AWT-EventQueue-0] File Choosed: C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png - (CadastroDeFilmes.java:252)
+DEBUG 23:18:18 [AWT-EventQueue-0] File Choosed: C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png - (CadastroDeFilmes.java:261)
+DEBUG 23:18:30 [AWT-EventQueue-0] Titulo Original: Super Homem
+Titulo Traduzido: Man of Steel
+Duracao: 180
+Ano de Lancamento: 2012
+Idioma: Português
+Genero: AÇÃO
+Classificacao: LIVRE
+Imagem: C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png - (CCadastroFilmes.java:27)
+DEBUG 23:18:37 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 23:18:37 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:263)
+DEBUG 23:18:39 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '4' - (SQLiteDao.java:127)
+DEBUG 23:18:39 [AWT-EventQueue-0] getClienteInfoById: [id=4, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:284)
+DEBUG 23:18:44 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 23:18:44 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:284)
+DEBUG 23:28:44 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 23:28:44 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:275)
+DEBUG 23:28:45 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 23:28:45 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:296)
+DEBUG 23:28:48 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '4' - (SQLiteDao.java:127)
+DEBUG 23:28:48 [AWT-EventQueue-0] getClienteInfoById: [id=4, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:296)
+DEBUG 23:31:27 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 23:31:27 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:275)
+DEBUG 23:31:28 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 23:31:28 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:296)
+DEBUG 23:31:39 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '4' - (SQLiteDao.java:127)
+DEBUG 23:31:39 [AWT-EventQueue-0] getClienteInfoById: [id=4, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:296)
+DEBUG 23:32:47 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '4' - (SQLiteDao.java:127)
+DEBUG 23:32:47 [AWT-EventQueue-0] getClienteInfoById: [id=4, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:296)
+DEBUG 23:34:55 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '4' - (SQLiteDao.java:127)
+DEBUG 23:34:55 [AWT-EventQueue-0] getClienteInfoById: [id=4, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:296)
+DEBUG 23:35:12 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 23:35:12 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:277)
+DEBUG 23:35:15 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 23:35:15 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:298)
+DEBUG 23:35:47 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 23:35:47 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:278)
+DEBUG 23:35:48 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 23:35:48 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:299)
+DEBUG 23:35:52 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '4' - (SQLiteDao.java:127)
+DEBUG 23:35:52 [AWT-EventQueue-0] getClienteInfoById: [id=4, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:299)
+DEBUG 23:37:45 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 23:37:45 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:280)
+DEBUG 23:37:47 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '4' - (SQLiteDao.java:127)
+DEBUG 23:37:47 [AWT-EventQueue-0] getClienteInfoById: [id=4, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:301)
+DEBUG 23:37:51 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 23:37:51 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:301)
+DEBUG 23:38:32 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 23:38:32 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:280)
+DEBUG 23:38:34 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 23:38:34 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:301)
+DEBUG 23:38:36 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '4' - (SQLiteDao.java:127)
+DEBUG 23:38:36 [AWT-EventQueue-0] getClienteInfoById: [id=4, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:301)
+DEBUG 23:38:39 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 23:38:39 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:301)
+DEBUG 23:39:06 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 23:39:06 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:280)
+DEBUG 23:39:07 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 23:39:07 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:280)
+DEBUG 23:39:08 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 23:39:08 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:280)
+DEBUG 23:39:11 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 23:39:11 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:301)
+DEBUG 23:39:17 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '4' - (SQLiteDao.java:127)
+DEBUG 23:39:17 [AWT-EventQueue-0] getClienteInfoById: [id=4, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:301)
+DEBUG 23:39:49 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 23:39:49 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:280)
+DEBUG 23:39:51 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '4' - (SQLiteDao.java:127)
+DEBUG 23:39:51 [AWT-EventQueue-0] getClienteInfoById: [id=4, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:301)
+DEBUG 23:39:53 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 23:39:53 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:301)
+DEBUG 23:40:18 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '4' - (SQLiteDao.java:127)
+DEBUG 23:40:18 [AWT-EventQueue-0] getClienteInfoById: [id=4, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:301)
+DEBUG 23:40:27 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '4' - (SQLiteDao.java:127)
+DEBUG 23:40:27 [AWT-EventQueue-0] getClienteInfoById: [id=4, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:301)
+DEBUG 23:42:06 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 23:42:06 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:280)
+DEBUG 23:42:08 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 23:42:08 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:301)
+DEBUG 23:42:13 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '4' - (SQLiteDao.java:127)
+DEBUG 23:42:13 [AWT-EventQueue-0] getClienteInfoById: [id=4, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:301)
+DEBUG 23:44:44 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 23:44:44 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:280)
+DEBUG 23:44:45 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 23:44:45 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:301)
+DEBUG 23:44:46 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 23:44:46 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:301)
+DEBUG 23:44:49 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '4' - (SQLiteDao.java:127)
+DEBUG 23:44:49 [AWT-EventQueue-0] getClienteInfoById: [id=4, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:301)
+DEBUG 10:51:38 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 10:51:38 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:288)
+DEBUG 10:51:46 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 10:51:46 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:309)
+DEBUG 10:53:51 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 10:53:51 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:288)
+DEBUG 10:53:53 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 10:53:53 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:309)
+DEBUG 10:54:00 [AWT-EventQueue-0] Adicionando filme a lista de compras: + A Ocasião faz o ladrão! - (PainelAluguel.java:333)
+DEBUG 10:54:28 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '34' - (SQLiteDao.java:127)
+DEBUG 10:54:28 [AWT-EventQueue-0] getClienteInfoById: [] - (PainelAluguel.java:309)
+DEBUG 10:54:53 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 10:54:53 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:288)
+DEBUG 10:54:55 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 10:54:55 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:309)
+DEBUG 10:54:56 [AWT-EventQueue-0] Adicionando filme a lista de compras: A Ocasião faz o ladrão! - (PainelAluguel.java:333)
+DEBUG 10:54:58 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '4' - (SQLiteDao.java:127)
+DEBUG 10:54:58 [AWT-EventQueue-0] getClienteInfoById: [id=4, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:309)
+DEBUG 10:54:59 [AWT-EventQueue-0] Adicionando filme a lista de compras: Super Homem - (PainelAluguel.java:333)
+DEBUG 10:55:01 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '44' - (SQLiteDao.java:127)
+DEBUG 10:55:01 [AWT-EventQueue-0] getClienteInfoById: [] - (PainelAluguel.java:309)
+DEBUG 10:56:47 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 10:56:47 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:288)
+DEBUG 10:56:49 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 10:56:49 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:311)
+DEBUG 10:56:50 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '4' - (SQLiteDao.java:127)
+DEBUG 10:56:50 [AWT-EventQueue-0] getClienteInfoById: [id=4, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:311)
+DEBUG 10:56:51 [AWT-EventQueue-0] Adicionando filme a lista de compras: Super Homem - (PainelAluguel.java:336)
+DEBUG 10:56:53 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 10:56:53 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:311)
+DEBUG 10:56:53 [AWT-EventQueue-0] Adicionando filme a lista de compras: A Ocasião faz o ladrão! - (PainelAluguel.java:336)
+DEBUG 10:57:14 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '333' - (SQLiteDao.java:127)
+DEBUG 10:57:14 [AWT-EventQueue-0] getClienteInfoById: [] - (PainelAluguel.java:311)
+ERROR 10:57:34 [AWT-EventQueue-0] Filme com Código = 333 não foi encontrado - (PainelAluguel.java:330)
+DEBUG 10:59:15 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 10:59:15 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:288)
+DEBUG 10:59:17 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 10:59:17 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:312)
+DEBUG 10:59:18 [AWT-EventQueue-0] Adicionando filme a lista de compras: A Ocasião faz o ladrão! - (PainelAluguel.java:338)
+DEBUG 11:00:01 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 11:00:01 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:288)
+DEBUG 11:00:03 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 11:00:03 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:312)
+DEBUG 11:00:04 [AWT-EventQueue-0] Adicionando filme a lista de compras: A Ocasião faz o ladrão! - (PainelAluguel.java:338)
+DEBUG 11:00:37 [AWT-EventQueue-0] Adicionando filme a lista de compras: A Ocasião faz o ladrão! - (PainelAluguel.java:338)
+DEBUG 11:00:42 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '4' - (SQLiteDao.java:127)
+DEBUG 11:00:42 [AWT-EventQueue-0] getClienteInfoById: [id=4, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:312)
+DEBUG 11:00:43 [AWT-EventQueue-0] Adicionando filme a lista de compras: Super Homem - (PainelAluguel.java:338)
+DEBUG 11:01:02 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 11:01:02 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:288)
+DEBUG 11:01:03 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 11:01:03 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:312)
+DEBUG 11:01:04 [AWT-EventQueue-0] Adicionando filme a lista de compras: A Ocasião faz o ladrão! - (PainelAluguel.java:338)
+DEBUG 11:01:05 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '4' - (SQLiteDao.java:127)
+DEBUG 11:01:05 [AWT-EventQueue-0] getClienteInfoById: [id=4, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:312)
+DEBUG 11:01:06 [AWT-EventQueue-0] Adicionando filme a lista de compras: Super Homem - (PainelAluguel.java:338)
+DEBUG 11:01:39 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 11:01:39 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:288)
+DEBUG 11:01:41 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 11:01:41 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:312)
+DEBUG 11:01:42 [AWT-EventQueue-0] Adicionando filme a lista de compras: A Ocasião faz o ladrão! - (PainelAluguel.java:338)
+DEBUG 11:01:43 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '4' - (SQLiteDao.java:127)
+DEBUG 11:01:43 [AWT-EventQueue-0] getClienteInfoById: [id=4, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:312)
+DEBUG 11:01:44 [AWT-EventQueue-0] Adicionando filme a lista de compras: Super Homem - (PainelAluguel.java:338)
+DEBUG 11:02:38 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:127)
+DEBUG 11:02:38 [AWT-EventQueue-0] getClienteInfoById: [id=1, cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-10-29 13:55:00, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:289)
+DEBUG 11:02:40 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '3' - (SQLiteDao.java:127)
+DEBUG 11:02:40 [AWT-EventQueue-0] getClienteInfoById: [id=3, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:313)
+DEBUG 11:02:41 [AWT-EventQueue-0] Adicionando filme a lista de compras: A Ocasião faz o ladrão! - (PainelAluguel.java:339)
+DEBUG 11:02:43 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '4' - (SQLiteDao.java:127)
+DEBUG 11:02:43 [AWT-EventQueue-0] getClienteInfoById: [id=4, duracao=180, genero=AÇÃO, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:313)
+DEBUG 11:02:44 [AWT-EventQueue-0] Adicionando filme a lista de compras: Super Homem - (PainelAluguel.java:339)
+DEBUG 11:02:48 [AWT-EventQueue-0] Cadastrando Transação:Cliente Id: [Super Homem] = Filme Id: 4Cliente Id: [A Ocasião faz o ladrão!] = Filme Id: 3 - (CAluguel.java:59)
+DEBUG 11:02:48 [AWT-EventQueue-0] Sql: INSERT INTO main.transacoes(id_cliente,id_filme) VALUES (1,4) - (SQLiteDao.java:152)
+DEBUG 11:02:48 [AWT-EventQueue-0] Sql: INSERT INTO main.transacoes(id_cliente,id_filme) VALUES (1,3) - (SQLiteDao.java:152)
+DEBUG 11:45:05 [main] Inicializando o sistema null vnull
+@autor: null
+
+@Contato: null - (Main.java:22)
+DEBUG 11:46:32 [main] Inicializando o sistema null vnull
+@autor: null
+@Contato: null - (Main.java:22)
+DEBUG 11:46:41 [main] Inicializando o sistema null vnull
+@autor: null
+@Contato: null - (Main.java:22)
+DEBUG 11:50:53 [main] Inicializando o sistema null v0.9
+@autor: null
+@Contato: null - (Main.java:22)
+DEBUG 11:52:16 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+INFO  11:52:32 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+DEBUG 11:52:53 [AWT-EventQueue-0] Cadastrando Cliente:
+Nome: Adriano Avelar
+Endereço: Estrada do Bongi, 425 B
+CPF: 12345678934
+Sexo: Feminino
+Bairro: Afogados
+Cidade: Recife
+Estado: Acre
+CEP: 50830260
+Tel: 8121288000
+ - (CCadastroCliente.java:37)
+DEBUG 11:53:39 [AWT-EventQueue-0] Cadastrando Cliente:
+Nome: Amanda Ribeiro
+Endereço: Estrada do Bongi, 425 B
+CPF: 12345678934
+Sexo: Feminino
+Bairro: Boa Viagem
+Cidade: Recife
+Estado: Pernanbuco
+CEP: 50835566
+Tel: 8145288000
+ - (CCadastroCliente.java:37)
+ERROR 11:53:39 [AWT-EventQueue-0] Erro ao cadastrar cliente: column cpf is not unique - (CCadastroCliente.java:45)
+DEBUG 11:55:24 [AWT-EventQueue-0] Cadastrando Cliente:
+Nome: Flavia Montinegro
+Endereço: Rua da aurora, n 234
+CPF: 12345678943
+Sexo: Feminino
+Bairro: Bom retiro
+Cidade: Recife
+Estado: Mato Grosso
+CEP: 134566789
+Tel: 3245654322
+ - (CCadastroCliente.java:37)
+DEBUG 11:55:32 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id = '1' - (SQLiteDao.java:145)
+ERROR 11:55:32 [AWT-EventQueue-0] [SQLITE_ERROR] SQL error or missing database (no such column: id) - (SQLiteDao.java:152)
+INFO  11:56:08 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+DEBUG 11:56:51 [AWT-EventQueue-0] Classificação Indicativa | Item Selecionado: Dezesseis - (CadastroDeFilmes.java:195)
+DEBUG 11:57:07 [AWT-EventQueue-0] File Choosed: C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\red2.png - (CadastroDeFilmes.java:252)
+DEBUG 11:57:10 [AWT-EventQueue-0] File Choosed: C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\red2.png - (CadastroDeFilmes.java:261)
+DEBUG 11:57:13 [AWT-EventQueue-0] Titulo Original: Red 2
+Titulo Traduzido: Red 2
+Duracao: 180
+Ano de Lancamento: 2012
+Idioma: Inglês
+Genero: AÇÃO
+Classificacao: Dezesseis
+Imagem: C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\red2.png - (CCadastroFilmes.java:27)
+DEBUG 11:57:20 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id_cliente = '1' - (SQLiteDao.java:145)
+DEBUG 11:57:20 [AWT-EventQueue-0] getClienteInfoById: [cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, id_cliente=1, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-11-07 14:52:53, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:289)
+DEBUG 11:57:21 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id_cliente = '2' - (SQLiteDao.java:145)
+DEBUG 11:57:21 [AWT-EventQueue-0] getClienteInfoById: [cidade=Recife, bairro=Bom retiro, cep=134566789, estado=Mato Grosso, tel=3245654322, id_cliente=2, sexo=FEMININO, cpf=12345678943, nome=Flavia Montinegro, data_cadastro=2013-11-07 14:55:24, endereco=Rua da aurora, n 234] - (PainelAluguel.java:289)
+DEBUG 11:57:23 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id_cliente = '3' - (SQLiteDao.java:145)
+DEBUG 11:57:23 [AWT-EventQueue-0] getClienteInfoById: [] - (PainelAluguel.java:289)
+ERROR 11:57:23 [AWT-EventQueue-0] Cliente com Código = 3 não foi encontrado - (PainelAluguel.java:301)
+DEBUG 11:57:41 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id = '1' - (SQLiteDao.java:145)
+ERROR 11:57:41 [AWT-EventQueue-0] [SQLITE_ERROR] SQL error or missing database (no such column: id) - (SQLiteDao.java:152)
+INFO  11:58:00 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+DEBUG 11:58:03 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id_cliente = '1' - (SQLiteDao.java:145)
+DEBUG 11:58:03 [AWT-EventQueue-0] getClienteInfoById: [cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, id_cliente=1, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-11-07 14:52:53, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:289)
+DEBUG 11:58:19 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id_filme = '1' - (SQLiteDao.java:145)
+DEBUG 11:58:19 [AWT-EventQueue-0] getClienteInfoById: [] - (PainelAluguel.java:313)
+ERROR 11:58:19 [AWT-EventQueue-0] Filme com Código = 1 não foi encontrado - (PainelAluguel.java:331)
+DEBUG 11:58:23 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id_filme = '2' - (SQLiteDao.java:145)
+DEBUG 11:58:23 [AWT-EventQueue-0] getClienteInfoById: [] - (PainelAluguel.java:313)
+ERROR 11:58:23 [AWT-EventQueue-0] Filme com Código = 2 não foi encontrado - (PainelAluguel.java:331)
+DEBUG 11:58:24 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id_filme = '3' - (SQLiteDao.java:145)
+DEBUG 11:58:24 [AWT-EventQueue-0] getClienteInfoById: [duracao=180, genero=AÇÃO, id_filme=3, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:313)
+DEBUG 11:58:27 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id_filme = '4' - (SQLiteDao.java:145)
+DEBUG 11:58:27 [AWT-EventQueue-0] getClienteInfoById: [duracao=180, genero=AÇÃO, id_filme=4, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:313)
+DEBUG 11:58:29 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id_filme = '5' - (SQLiteDao.java:145)
+DEBUG 11:58:29 [AWT-EventQueue-0] getClienteInfoById: [duracao=180, genero=AÇÃO, id_filme=5, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\red2.png, titulo_original=Red 2, classificacao=Dezesseis, idioma=Inglês, ano=2012, titulo_traduzido=Red 2] - (PainelAluguel.java:313)
+DEBUG 11:58:32 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id_filme = '5' - (SQLiteDao.java:145)
+DEBUG 11:58:32 [AWT-EventQueue-0] getClienteInfoById: [duracao=180, genero=AÇÃO, id_filme=5, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\red2.png, titulo_original=Red 2, classificacao=Dezesseis, idioma=Inglês, ano=2012, titulo_traduzido=Red 2] - (PainelAluguel.java:313)
+DEBUG 11:58:33 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id_filme = '5' - (SQLiteDao.java:145)
+DEBUG 11:58:33 [AWT-EventQueue-0] getClienteInfoById: [duracao=180, genero=AÇÃO, id_filme=5, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\red2.png, titulo_original=Red 2, classificacao=Dezesseis, idioma=Inglês, ano=2012, titulo_traduzido=Red 2] - (PainelAluguel.java:313)
+INFO  12:01:33 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+DEBUG 12:01:38 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id_cliente = '1' - (SQLiteDao.java:145)
+DEBUG 12:01:38 [AWT-EventQueue-0] getClienteInfoById: [cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, id_cliente=1, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-11-07 14:52:53, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:289)
+DEBUG 12:01:40 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id_filme = '3' - (SQLiteDao.java:145)
+DEBUG 12:01:40 [AWT-EventQueue-0] getClienteInfoById: [duracao=180, genero=AÇÃO, id_filme=3, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:313)
+INFO  12:02:16 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+DEBUG 12:02:20 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id_cliente = '1' - (SQLiteDao.java:145)
+DEBUG 12:02:20 [AWT-EventQueue-0] getClienteInfoById: [cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, id_cliente=1, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-11-07 14:52:53, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:289)
+DEBUG 12:02:22 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id_filme = '3' - (SQLiteDao.java:145)
+DEBUG 12:02:22 [AWT-EventQueue-0] getClienteInfoById: [duracao=180, genero=AÇÃO, id_filme=3, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:313)
+INFO  12:02:47 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+DEBUG 12:02:50 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id_cliente = '1' - (SQLiteDao.java:145)
+DEBUG 12:02:50 [AWT-EventQueue-0] getClienteInfoById: [cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, id_cliente=1, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-11-07 14:52:53, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:289)
+DEBUG 12:02:51 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id_filme = '3' - (SQLiteDao.java:145)
+DEBUG 12:02:51 [AWT-EventQueue-0] getClienteInfoById: [duracao=180, genero=AÇÃO, id_filme=3, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:313)
+DEBUG 12:02:53 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id_filme = '4' - (SQLiteDao.java:145)
+DEBUG 12:02:53 [AWT-EventQueue-0] getClienteInfoById: [duracao=180, genero=AÇÃO, id_filme=4, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:313)
+DEBUG 12:02:55 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id_filme = '5' - (SQLiteDao.java:145)
+DEBUG 12:02:55 [AWT-EventQueue-0] getClienteInfoById: [duracao=180, genero=AÇÃO, id_filme=5, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\red2.png, titulo_original=Red 2, classificacao=Dezesseis, idioma=Inglês, ano=2012, titulo_traduzido=Red 2] - (PainelAluguel.java:313)
+DEBUG 12:03:20 [AWT-EventQueue-0] Adicionando filme a lista de compras: Red 2 - (PainelAluguel.java:339)
+DEBUG 12:03:22 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id_filme = '3' - (SQLiteDao.java:145)
+DEBUG 12:03:22 [AWT-EventQueue-0] getClienteInfoById: [duracao=180, genero=AÇÃO, id_filme=3, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:313)
+DEBUG 12:03:23 [AWT-EventQueue-0] Adicionando filme a lista de compras: A Ocasião faz o ladrão! - (PainelAluguel.java:339)
+DEBUG 12:03:25 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id_filme = '2' - (SQLiteDao.java:145)
+DEBUG 12:03:25 [AWT-EventQueue-0] getClienteInfoById: [] - (PainelAluguel.java:313)
+ERROR 12:03:25 [AWT-EventQueue-0] Filme com Código = 2 não foi encontrado - (PainelAluguel.java:331)
+DEBUG 12:03:28 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id_filme = '4' - (SQLiteDao.java:145)
+DEBUG 12:03:28 [AWT-EventQueue-0] getClienteInfoById: [duracao=180, genero=AÇÃO, id_filme=4, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:313)
+DEBUG 12:03:29 [AWT-EventQueue-0] Adicionando filme a lista de compras: Super Homem - (PainelAluguel.java:339)
+DEBUG 12:03:30 [AWT-EventQueue-0] Adicionando filme a lista de compras: Super Homem - (PainelAluguel.java:339)
+DEBUG 12:03:32 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id_filme = '5' - (SQLiteDao.java:145)
+DEBUG 12:03:32 [AWT-EventQueue-0] getClienteInfoById: [duracao=180, genero=AÇÃO, id_filme=5, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\red2.png, titulo_original=Red 2, classificacao=Dezesseis, idioma=Inglês, ano=2012, titulo_traduzido=Red 2] - (PainelAluguel.java:313)
+DEBUG 12:03:33 [AWT-EventQueue-0] Adicionando filme a lista de compras: Red 2 - (PainelAluguel.java:339)
+DEBUG 12:03:50 [AWT-EventQueue-0] Cadastrando Transação:Cliente Id: [Super Homem] = Filme Id: 4Cliente Id: [Red 2] = Filme Id: 5Cliente Id: [A Ocasião faz o ladrão!] = Filme Id: 3 - (CAluguel.java:59)
+DEBUG 12:03:50 [AWT-EventQueue-0] Sql: INSERT INTO main.transacoes(id_cliente,id_filme) VALUES (1,4) - (SQLiteDao.java:170)
+DEBUG 12:03:50 [AWT-EventQueue-0] Sql: INSERT INTO main.transacoes(id_cliente,id_filme) VALUES (1,5) - (SQLiteDao.java:170)
+DEBUG 12:03:50 [AWT-EventQueue-0] Sql: INSERT INTO main.transacoes(id_cliente,id_filme) VALUES (1,3) - (SQLiteDao.java:170)
+DEBUG 12:04:05 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id_cliente = '2' - (SQLiteDao.java:145)
+DEBUG 12:04:05 [AWT-EventQueue-0] getClienteInfoById: [cidade=Recife, bairro=Bom retiro, cep=134566789, estado=Mato Grosso, tel=3245654322, id_cliente=2, sexo=FEMININO, cpf=12345678943, nome=Flavia Montinegro, data_cadastro=2013-11-07 14:55:24, endereco=Rua da aurora, n 234] - (PainelAluguel.java:289)
+DEBUG 12:04:13 [AWT-EventQueue-0] Cadastrando Transação:Cliente Id: [Red 2] = Filme Id: 5Cliente Id: [A Ocasião faz o ladrão!] = Filme Id: 3 - (CAluguel.java:59)
+DEBUG 12:04:13 [AWT-EventQueue-0] Sql: INSERT INTO main.transacoes(id_cliente,id_filme) VALUES (2,5) - (SQLiteDao.java:170)
+DEBUG 12:04:13 [AWT-EventQueue-0] Sql: INSERT INTO main.transacoes(id_cliente,id_filme) VALUES (2,3) - (SQLiteDao.java:170)
+DEBUG 12:35:53 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id_cliente LIKE '%1%' - (SQLiteDao.java:145)
+DEBUG 12:35:55 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id_cliente LIKE '%2%' - (SQLiteDao.java:145)
+INFO  12:37:42 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+DEBUG 12:37:55 [AWT-EventQueue-0] Sql: SELECT transacoes.id_transacao,clientes.id_cliente,clientes.nome,filmes.titulo_original,  filmes.titulo_traduzido, transacoes.data FROM transacoes,clientes,filmesWHERE transacoes.id_cliente = clientes.id_cliente AND  transacoes.id_filme= filmes.id_filme  - (SQLiteDao.java:132)
+ERROR 12:37:55 [AWT-EventQueue-0] [SQLITE_ERROR] SQL error or missing database (near ".": syntax error) - (SQLiteDao.java:139)
+INFO  12:38:55 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+DEBUG 12:39:01 [AWT-EventQueue-0] Sql: SELECT transacoes.id_transacao,clientes.id_cliente,clientes.nome,filmes.titulo_original,  filmes.titulo_traduzido, transacoes.data FROM transacoes,clientes,filmes WHERE transacoes.id_cliente = clientes.id_cliente AND  transacoes.id_filme = filmes.id_filme  - (SQLiteDao.java:132)
+DEBUG 12:39:12 [AWT-EventQueue-0] Sql: SELECT transacoes.id_transacao,clientes.id_cliente,clientes.nome,filmes.titulo_original,  filmes.titulo_traduzido, transacoes.data FROM transacoes,clientes,filmes WHERE transacoes.id_cliente = clientes.id_cliente AND  transacoes.id_filme = filmes.id_filme  AND nome LIKE '%adriano%' - (SQLiteDao.java:132)
+DEBUG 12:39:17 [AWT-EventQueue-0] Sql: SELECT transacoes.id_transacao,clientes.id_cliente,clientes.nome,filmes.titulo_original,  filmes.titulo_traduzido, transacoes.data FROM transacoes,clientes,filmes WHERE transacoes.id_cliente = clientes.id_cliente AND  transacoes.id_filme = filmes.id_filme  - (SQLiteDao.java:132)
+DEBUG 12:39:22 [AWT-EventQueue-0] Sql: SELECT transacoes.id_transacao,clientes.id_cliente,clientes.nome,filmes.titulo_original,  filmes.titulo_traduzido, transacoes.data FROM transacoes,clientes,filmes WHERE transacoes.id_cliente = clientes.id_cliente AND  transacoes.id_filme = filmes.id_filme  AND nome LIKE '%flavia%' - (SQLiteDao.java:132)
+INFO  12:41:11 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+DEBUG 12:41:19 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes - (SQLiteDao.java:157)
+INFO  12:51:48 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+INFO  12:52:34 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+INFO  12:52:40 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+INFO  12:52:50 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+INFO  12:53:23 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+INFO  12:53:54 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+INFO  12:54:04 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+INFO  12:54:28 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+INFO  12:54:42 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+INFO  12:56:34 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+DEBUG 12:56:45 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id_cliente = '2' - (SQLiteDao.java:157)
+DEBUG 12:56:45 [AWT-EventQueue-0] getClienteInfoById: [cidade=Recife, bairro=Bom retiro, cep=134566789, estado=Mato Grosso, tel=3245654322, id_cliente=2, sexo=FEMININO, cpf=12345678943, nome=Flavia Montinegro, data_cadastro=2013-11-07 14:55:24, endereco=Rua da aurora, n 234] - (PainelAluguel.java:289)
+INFO  12:59:37 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+DEBUG 12:59:48 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id_cliente = '1' - (SQLiteDao.java:157)
+DEBUG 12:59:48 [AWT-EventQueue-0] getClienteInfoById: [cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, id_cliente=1, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-11-07 14:52:53, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:289)
+DEBUG 12:59:49 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id_filme = '3' - (SQLiteDao.java:157)
+DEBUG 12:59:49 [AWT-EventQueue-0] getClienteInfoById: [duracao=180, genero=AÇÃO, id_filme=3, imagem=C:\Users\Adriano\git\PassaTempo\PassaTempo\res\FilmesImagens\a_ocasiao_faz_o_ladrao.png, titulo_original=A Ocasião faz o ladrão!, classificacao=LIVRE, idioma=Português, ano=1986, titulo_traduzido=The opportunitie makes the thief] - (PainelAluguel.java:313)
+INFO  13:00:06 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+DEBUG 13:00:09 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes WHERE id_cliente = '1' - (SQLiteDao.java:157)
+DEBUG 13:00:09 [AWT-EventQueue-0] getClienteInfoById: [cidade=Recife, bairro=Afogados, cep=50830260, estado=Acre, tel=8121288000, id_cliente=1, sexo=FEMININO, cpf=12345678934, nome=Adriano Avelar, data_cadastro=2013-11-07 14:52:53, endereco=Estrada do Bongi, 425 B] - (PainelAluguel.java:289)
+DEBUG 13:00:10 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes WHERE id_filme = '4' - (SQLiteDao.java:157)
+DEBUG 13:00:10 [AWT-EventQueue-0] getClienteInfoById: [duracao=180, genero=AÇÃO, id_filme=4, imagem=C:\Users\Adriano\git\passatempo\PassaTempo\res\FilmesImagens\man_of_steel.png, titulo_original=Super Homem, classificacao=LIVRE, idioma=Português, ano=2012, titulo_traduzido=Man of Steel] - (PainelAluguel.java:313)
+DEBUG 13:00:14 [AWT-EventQueue-0] Adicionando filme a lista de compras: Super Homem - (PainelAluguel.java:341)
+DEBUG 13:00:41 [AWT-EventQueue-0] Sql: SELECT transacoes.id_transacao,clientes.id_cliente,clientes.nome,filmes.titulo_original,  filmes.titulo_traduzido, transacoes.data FROM transacoes,clientes,filmes WHERE transacoes.id_cliente = clientes.id_cliente AND  transacoes.id_filme = filmes.id_filme  - (SQLiteDao.java:132)
+INFO  13:03:46 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+INFO  13:12:01 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+INFO  13:14:45 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+INFO  13:15:32 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+INFO  13:16:27 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+INFO  13:16:36 [main] Inicializando o sistema Passa Tempo v 0.9
+@autor: adrianoavelar.com
+@Contato: eama@cin.ufpe.br - (Main.java:22)
+DEBUG 13:16:47 [AWT-EventQueue-0] Sql: SELECT * FROM main.filmes - (SQLiteDao.java:157)
+DEBUG 13:16:50 [AWT-EventQueue-0] Sql: SELECT * FROM main.clientes - (SQLiteDao.java:157)

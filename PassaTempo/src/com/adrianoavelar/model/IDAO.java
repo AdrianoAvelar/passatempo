@@ -15,10 +15,12 @@ public interface IDAO {
 	 */
 	public abstract void salvar(Cliente cliente) throws SQLException;
 	public abstract void salvar(Filme filme) throws SQLException;
-	public abstract Object pesquisaComRetorno(String table,String coluna, String criterio);
+	public abstract Object pesquisaComRetorno(String table, String coluna, String criterio,	boolean withLike);
 	
 	public abstract void atualizar(Cliente cliente) ;
 	public abstract void remover(Cliente cliente);
 	public abstract List<Cliente> pesquisar(Cliente cliente);
+	public abstract void cadastrarTransacao(Transacao aluguel) throws SQLException;
+	
 	
 }

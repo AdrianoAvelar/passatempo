@@ -5,7 +5,7 @@ import javax.swing.ImageIcon;
 
 public enum ClassificacaoIndicativa {
 
-	LIVRE("LIVRE"),
+	LIVRE("Livre"),
 	DEZ("Dez"),
 	DOZE("Doze"),
 	QUATORZE("Quatorze"),
@@ -46,4 +46,17 @@ public enum ClassificacaoIndicativa {
 		// TODO Auto-generated method stub
 		return ci;
 	}
+	
+	 public static ClassificacaoIndicativa getValueOf(String str){
+		 ClassificacaoIndicativa[] ci = values();
+		 ClassificacaoIndicativa ret = null;
+	    	 for (int i = 0; i < ci.length; i++) {
+	    		 if(str.equalsIgnoreCase(ci[i].toString()))
+	    		{
+	    			 ret= ci[i];
+	    			 break;
+	    		}
+	    	 }
+			return ret;
+	    }
 }

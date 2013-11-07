@@ -23,6 +23,8 @@ import javax.swing.JTextField;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
+import org.apache.log4j.Logger;
+
 import com.adrianoavelar.controller.CCadastroCliente;
 import com.adrianoavelar.model.Cliente;
 import com.adrianoavelar.util.EstadosBrasil;
@@ -31,6 +33,7 @@ import com.adrianoavelar.util.UtilGUI;
 
 public class CadastroDeClientes extends JDialog {
 
+	private static Logger LOG = Logger.getLogger(CadastroDeClientes.class);
 	private static final long serialVersionUID = 1291150202905925767L;
 	
 	private JTextField tfNome;
@@ -285,7 +288,7 @@ public class CadastroDeClientes extends JDialog {
 		} catch (ClassNotFoundException | InstantiationException
 				| IllegalAccessException | UnsupportedLookAndFeelException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			LOG.error(e.getMessage());
 		}
 	}
 }

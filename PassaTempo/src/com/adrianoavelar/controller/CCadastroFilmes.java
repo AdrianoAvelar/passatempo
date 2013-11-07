@@ -41,14 +41,14 @@ public class CCadastroFilmes {
 	
 	public DefaultTableModel procurarFilme(String coluna, String criterio){
 		
-		ResultSet rs = (ResultSet) dao.pesquisaComRetorno("filmes",coluna, criterio);
+		ResultSet rs = (ResultSet) dao.pesquisaComRetorno("filmes",coluna, criterio,true);
 		DefaultTableModel model = null;
 		
 		try {
 			model =  Util.buildTableModel(rs);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			LOG.error(e.getMessage());
 		}
 		return model;
 	}

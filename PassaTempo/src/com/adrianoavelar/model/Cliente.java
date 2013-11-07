@@ -129,13 +129,13 @@ public class Cliente {
 		output.append("Cidade: "+getCidade()+"\n");
 		output.append("Estado: "+getEstado()+"\n");
 		output.append("CEP: "+getCEP()+"\n");
-		output.append("Tel: "+getTel()+"\n");
+		output.append("Tel: "+getTel());
 		
 		return output.toString();
 	}
 	
 	public String[] getCampos(){
-		String campos[] = {"Id","Nome","Endereco","CPF","Sexo","Bairro","Cidade","Estado","CEP","Telefone","Data_Cadastro"};
+		String campos[] = {"Id_cliente","Nome","Endereco","CPF","Sexo","Bairro","Cidade","Estado","CEP","Telefone","Data_Cadastro"};
 		return campos;
 	}
 	
