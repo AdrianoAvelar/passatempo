@@ -1,4 +1,3 @@
-
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
@@ -18,7 +17,7 @@ public class Main {
 				"\n@autor: "+Util.getPropriedade("author")+"\n"
 				+"@Contato: "+Util.getPropriedade("contact");
 		
-		
+		//Inserindo logs de informações.
 		LOG.info(msg );
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
