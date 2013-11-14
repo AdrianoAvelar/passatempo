@@ -12,14 +12,14 @@ import javax.swing.JProgressBar;
 import com.adrianoavelar.util.Resource;
 
 @SuppressWarnings("serial")
-public class SplashJProgressBar extends javax.swing.JWindow {
+public class SplashScreen extends javax.swing.JWindow {
 	private JLabel jLabelSplashImage;
 	private JLabel jLabelTextoCarregamento;
 	private  JLabel jLabelTextoDinamicoPlugins;
 	private  JProgressBar jProgressBarSistema;
 	private String ssImagePath = Resource.getImageResourcePath()+"splashscreen.png";
 
-	public SplashJProgressBar() {
+	public SplashScreen() {
 		criandoComponentes();
 		this.setVisible(true);
 	}
@@ -137,7 +137,7 @@ public class SplashJProgressBar extends javax.swing.JWindow {
 	//Somente para Teste
 	public static void main(String args[]) {
 
-		SplashJProgressBar ssb = new SplashJProgressBar();
+		SplashScreen ssb = new SplashScreen();
 
 		/**
 		 * Rotina para exibicao de um texto qualquer no carregamento do seu
