@@ -28,6 +28,7 @@ import org.apache.log4j.Logger;
 import com.adrianoavelar.controller.CCadastroCliente;
 import com.adrianoavelar.model.Cliente;
 import com.adrianoavelar.util.EstadosBrasil;
+import com.adrianoavelar.util.Generos;
 import com.adrianoavelar.util.Resource;
 import com.adrianoavelar.util.UtilGUI;
 
@@ -248,7 +249,7 @@ public class CadastroDeClientes extends JDialog {
 				cliente.setCEP(Integer.parseInt(tfCep.getText()));
 				cliente.setTel(Long.parseLong(tfTelCel.getText()));
 				cliente.setFeminino(rdbtnFeminino.isSelected());
-
+				
 				if (controller.cadastrarCliente(cliente)) {
 					UtilGUI.successMessage("Cliente Cadastrado com Sucesso!");
 					dispose();
